@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GITHUP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1 class="app-title">GITHUP</h1>
+      </header>
+      <div class="content">
+        <div class="left">
+          <div class="card">
+            <h2>Fetch Repos By Username</h2>
+            <form id="user-form">
+              <label for="">Username</label>
+              <input type="text" id="username" />
+              <button type="submit" class="btn-el">Get Repos</button>
+            </form>
+          </div>
+          <div class="card">
+            <h2>Fetch Repos By Languages</h2>
+            <div class="languages">
+              <button data-lng="Javascript" class="btn-el">JS</button>
+              <button data-lng="Php" class="btn-el">Php</button>
+              <button data-lng="Html" class="btn-el">Html</button>
+              <button data-lng="Css" class="btn-el">Css</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <p id="search-term"></p>
+          <div class="repos"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
